@@ -15,6 +15,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
+
 	<body class="is-preload">
 
 		<!-- Wrapper -->
@@ -22,7 +23,22 @@
 
 				<!-- Intro -->
 					<div id="intro">
-						<h1>Joseph Lie <br> Ovelgonne</h1>
+						
+						<script>
+							var i = 0;
+							var txt = 'Lorem ipsum dummy text blabla.';
+							var speed = 50;
+							
+							function typeWriter() {
+							  if (i < txt.length) {
+								document.getElementById("demo").innerHTML += txt.charAt(i);
+								i++;
+								setTimeout(typeWriter, speed);
+							  }
+							}
+						</script>
+
+						<h1 class="typed-out">Joseph Lie Ovelgonne</h1>
 						<p> Mechatronics Engineering (Honours) <br /> University of Sydney 2021 - 2024
 						</p>
 						<ul class="actions">
@@ -54,9 +70,9 @@
 							<article class="post featured">
 								<header class="major">
 									<h2>About me</h2>
-									<p>Hi, I'm Joseph Lie Ovelgonne. Australian mechatronics engineering student living in Malaysia, looking for new opportunities to grow, and passionate in learning through problem solving. 
-									Feel free to check my programming history and education below, as I'm looking for new jobs and internships to diversify my knowledge. </p>
-									<p><a href="#bottom"> You may  contact me through my email or by mobile provided down below for any queries or offers. </a></p>
+									<p>Hi, I'm Joseph Lie Ovelgonne. Australian mechatronics engineering student looking for new learning opportunities. This website is a little side project I had worked on a while ago, and once in a while I'd like to keep it updated.  
+									Below is my programming history and education, as well as recent accomplishments or passion stories of mine. Feel free to look around! </p>
+									<p><a href="#bottom"> If you're interested in me or my work, you may contact me through my email or by mobile provided down below. I'm open to new jobs or projects to diversify my knowledge.</a></p>
 									<img src="images/pic01.jpg" alt="Picture of Me" width="400"/>
 								</header>
 								
@@ -64,7 +80,22 @@
 								</ul>
 							</article>
 
-						<!-- Posts -->
+						<!-- Recent Projects -->
+						<!-- <h2> Recent Projects</h2>
+						<section class="posts">
+							<article>
+								<header>
+									<h2> Test</h2>
+								</header>
+								<a href="project_pages/project1.html" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+								<p> Test </p>
+								<ul class="actions special">
+								</ul>
+							</article>
+						</section> -->
+
+						<!-- Skills -->
+						<!-- <h2> Skills</h2> -->
 							<section class="posts">
 								<article>
 									<header>
